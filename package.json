@@ -1,0 +1,25 @@
+{
+  "name": "matchday",
+  "version": "0.1.0",
+  "description": "An app that helps football coaches manage their team and organize practices",
+  "homepage": "https://github.com/dawidwojtaszek/MatchDay#readme",
+  "bugs": {
+    "url": "https://github.com/dawidwojtaszek/MatchDay/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawidwojtaszek/MatchDay.git"
+  },
+  "license": "MIT",
+  "author": "Dawid Wojtaszek",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
