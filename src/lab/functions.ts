@@ -1,7 +1,10 @@
 export const attendanceRate = function (
   attendance: number,
   practiceSessions: number,
-): number | undefined {
+): number | null {
+  if (practiceSessions <= 0) {
+    return null;
+  }
   return Math.round((attendance / practiceSessions) * 100 * 10) / 10;
 };
 
