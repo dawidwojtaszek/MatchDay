@@ -17,7 +17,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node ./dist/index.js"
+    "start": "node ./dist/index.js",
+    "dev:build": "tsc -w",
+    "dev:run": "node --watch"
   },
   "devDependencies": {
     "@types/node": "^26.1.2",
