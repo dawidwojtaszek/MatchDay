@@ -17,15 +17,10 @@ Promise.resolve().then(() => {
 });
 console.log("C");
 
-//console.log("A")
-//setTimeout → "B1"
-//Promise.resolve().then → "D1"
-//setTimeout → "B2"
-//Promise.resolve().then → "D2"
-//console.log("C")
-//
 const start = Date.now();
 
-while (Date.now() - start < 100) {
+// Blocking loop: synchronous code blocks the call stack,
+// so queued tasks cannot run until the loop finishes.
+while (Date.now() - start < 3) {
   console.log("xxx ");
 }
