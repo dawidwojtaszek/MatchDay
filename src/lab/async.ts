@@ -74,7 +74,6 @@ async function loadSquadWithError(): Promise<void> {
   } catch {
     console.log("error");
   }
-  //result.forEach((e: string): void => console.log(e));
   console.log(Date.now() - start);
 }
 
